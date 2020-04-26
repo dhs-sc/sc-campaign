@@ -23,7 +23,6 @@
     width: 100%;
     font-size: 10vw;
     display: block;
-    transition: height 0.5s, width 0.5s;
 }
 
 .student-img{
