@@ -39,15 +39,13 @@
         width: 80%;
         font-size: 2em;
     }
-
-    .shown{
-        display:block !important;
-        transition: height 1s;
-    }
-
-    #resume, #idea, #intro, #dtalk{
-        display: none;
-    }
     
 }
+.shown{
+    display:block !important;
+    transition: height 1s;
+}
 
+#resume, #idea, #intro, #dtalk{
+    display: none;
+}
