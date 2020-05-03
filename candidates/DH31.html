@@ -10,14 +10,34 @@
     <!-- js to write html for navbar -->
     <script src="../assets/js/navbar.js"></script>
     <div class="container text-center">
-		<h2>Personal Resume</h2>
-        <img src="../assets/pdf/DH31_resume.png" class="pdf" />
-        <h2>Idea Board</h2>
-        <img src="../assets/pdf/DH31_idea-board.png" class="pdf"/>
-		<h2>Intro Video</h2>
-        <video controls="controls" class="video" name="Intro Video" src="../assets/vid/DH31_intro_vid.mov"></video>
-	</div>
+        <button class="btn btn-primary big" id="btn-resume">Personal Resume</button>
+        <div id="resume">
+            <img src="../assets/pdf/DH31_resume.png" class="pdf" />
+        </div>
+        <button class="btn btn-primary big" id="btn-idea">Idea Board</button>
+        <div id="idea">
+            <img src="../assets/pdf/DH31_idea-board.png" class="pdf" />
+        </div>
+        <button class="btn btn-danger big" id="btn-intro">Intro Video</button>
+        <div id="intro">
+            <video controls="controls" class="video" name="Intro Video" src="../assets/vid/DH31_intro_vid.mov"></video>
+        </div>
+    </div>
+<script>
+    $(document).ready(function () {
+        $("#btn-resume").click(function () {
+            $("#resume").toggleClass('shown');
+        });
 
+        $("#btn-idea").click(function () {
+            $("#idea").toggleClass('shown');
+        });
+
+        $("#btn-intro").click(function () {
+            $("#intro").toggleClass('shown');
+        });
+    });
+</script>
 </body>
 
 </html>

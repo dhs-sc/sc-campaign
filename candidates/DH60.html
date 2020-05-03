@@ -10,16 +10,42 @@
     <!-- js to write html for navbar -->
     <script src="../assets/js/navbar.js"></script>
     <div class="container text-center">
-		<h2>Personal Resume</h2>
-        <img src="../assets/pdf/DH60_resume.png" class="pdf" />
-        <h2>Idea Board</h2>
-        <img src="../assets/pdf/DH60_idea-board.png" class="pdf"/>
-		<h2>Intro Video</h2>
-        <video controls="controls" class="video" name="Intro Video" src="../assets/vid/DH60_intro_vid.mp4"></video>
-		<h2>D'Talk</h2>
-        <video controls="controls" class="video" name="Intro Video" src="../assets/vid/DH60_dtalk.mp4"></video
+        <button class="btn btn-primary big" id="btn-resume">Personal Resume</button>
+        <div id="resume">
+            <img src="../assets/pdf/DH60_resume.png" class="pdf" />
+        </div>
+        <button class="btn btn-primary big" id="btn-idea">Idea Board</button>
+        <div id="idea">
+            <img src="../assets/pdf/DH60_idea-board.png" class="pdf" />
+        </div>
+        <button class="btn btn-danger big" id="btn-intro">Intro Video</button>
+        <div id="intro">
+            <video controls="controls" class="video" name="Intro Video" src="../assets/vid/DH60_intro_vid.mp4"></video>
+        </div>
+        <button class="btn btn-danger big" id="btn-dtalk">D'Talk</button>
+        <div id="dtalk">
+            <video controls="controls" class="video" name="Intro Video" src="../assets/vid/DH60_dtalk.mp4"></video>
+        </div>
     </div>
+<script>
+    $(document).ready(function () {
+        $("#btn-resume").click(function () {
+            $("#resume").toggleClass('shown');
+        });
 
+        $("#btn-idea").click(function () {
+            $("#idea").toggleClass('shown');
+        });
+
+        $("#btn-intro").click(function () {
+            $("#intro").toggleClass('shown');
+        });
+
+        $("#btn-dtalk").click(function () {
+            $("#dtalk").toggleClass('shown');
+        });
+    });
+</script>
 </body>
 
 </html>

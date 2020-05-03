@@ -16,6 +16,11 @@
         width: 100%;
         height: auto;
     }
+
+    .big{
+        width: 100%;
+        font-size: 2em;
+    }
 }
 
 
@@ -29,4 +34,20 @@
         width: auto;
         height: 80vh;
     }
+
+    .big{
+        width: 80%;
+        font-size: 2em;
+    }
+
+    .shown{
+        display:block !important;
+        transition: height 1s;
+    }
+
+    #resume, #idea, #intro, #dtalk{
+        display: none;
+    }
+    
 }
+
