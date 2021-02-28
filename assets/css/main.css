@@ -14,6 +14,13 @@
     float: center;
 }
 
+.main-container{
+    width: 80vw;
+    height: 45vw;
+    margin: 0 auto;
+    float: center;
+}
+
 #main{
     display: flex;
 }
@@ -27,7 +34,7 @@
 
 .student-img{
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 a{
@@ -49,6 +56,10 @@ h3{
         font-size: 1.7vw;
     }
 
+    .campaign-group{
+        font-size: 1.7vw;
+    }
+
     iframe{
         width: 100%;
         height: 500px;
@@ -62,6 +73,10 @@ h3{
     }
 
     .student-name{
+        font-size: 3vw;
+    }
+
+    .campaign-group{
         font-size: 3vw;
     }
 
