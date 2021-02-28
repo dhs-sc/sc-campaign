@@ -1,54 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>SC Campaign Candidates</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<head>
+		<title>SC Campaign Candidates</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="../assets/js/inject-base.js"></script>
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
 
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+		<link rel="stylesheet" href="./assets/css/main.css" />
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+		<script>
+			$(function () {
+				$(".dropdown").hover(
+					function () {
+						$(this).addClass("open");
+					},
+					function () {
+						$(this).removeClass("open");
+					}
+				);
+			});
+		</script>
+	</head>
 
-</body>
+	<body>
+		<!-- js to write html for navbar -->
+		<script src="./assets/js/navbar.js"></script>
 
+		<div class="jumbotron text-center SH">
+			<h1>SH GROUP 1 Candidates</h1>
+		</div>
+
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-sm-4 mb-5">
+					<a href="DH01.html">
+						<h3 class="student-id">DH01</h3>
+						<img
+							src="./assets/img/student-data/DH01_profile_cropped.png"
+							class="student-img"
+						/>
+						<h3 class="student-name">Abigail Hsu Rui-En</h3>
+					</a>
+				</div>
+				<div class="col-sm-4 mb-5">
+					<a href="DH02.html">
+						<h3 class="student-id">DH02</h3>
+						<img
+							src="./assets/img/student-data/DH02_profile_cropped.png"
+							class="student-img"
+						/>
+						<h3 class="student-name">Andrea Chua Rui Yin</h3>
+					</a>
+				</div>
+				<div class="col-sm-4 mb-5">
+					<a href="DH03.html">
+						<h3 class="student-id">DH03</h3>
+						<img
+							src="./assets/img/student-data/DH03_profile_cropped.png"
+							class="student-img"
+						/>
+						<h3 class="student-name">Ang Wei En</h3>
+					</a>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-sm-4 mb-5">
+					<a href="DH04.html">
+						<h3 class="student-id">DH04</h3>
+						<img
+							src="./assets/img/student-data/DH04_profile_cropped.png"
+							class="student-img"
+						/>
+						<h3 class="student-name">Beatrix Koh Xiu Fang</h3>
+					</a>
+				</div>
+				<div class="col-sm-4 mb-5">
+					<a href="DH05.html">
+						<h3 class="student-id">DH05</h3>
+						<img
+							src="./assets/img/student-data/DH05_profile_cropped.png"
+							class="student-img"
+						/>
+						<h3 class="student-name">Chanielle Boon Xue En</h3>
+					</a>
+				</div>
+				<div class="col-sm-4 mb-5">
+					<a href="DH06.html">
+						<h3 class="student-id">DH06</h3>
+						<img
+							src="./assets/img/student-data/DH06_profile_cropped.png"
+							class="student-img"
+						/>
+						<h3 class="student-name">Charis Wu Si Si</h3>
+					</a>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-sm-4 mb-5">
+					<a href="DH07.html">
+						<h3 class="student-id">DH07</h3>
+						<img
+							src="./assets/img/student-data/DH07_profile_cropped.png"
+							class="student-img"
+						/>
+						<h3 class="student-name">Chee Cheng Yinn Sheri</h3>
+					</a>
+				</div>
+				<div class="col-sm-4 mb-5">
+					<a href="DH08.html">
+						<h3 class="student-id">DH08</h3>
+						<img
+							src="./assets/img/student-data/DH08_profile_cropped.png"
+							class="student-img"
+						/>
+						<h3 class="student-name">Chen XinYuan</h3>
+					</a>
+				</div>
+				<div class="col-sm-4 mb-5">
+					<a href="DH09.html">
+						<h3 class="student-id">DH09</h3>
+						<img
+							src="./assets/img/student-data/DH09_profile_cropped.png"
+							class="student-img"
+						/>
+						<h3 class="student-name">Cheryl Rachel Tang Jing Ting</h3>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- template to copy and paste (line 185 to 209), remember to modify "id" (below) for respective student profiles -->
+		<div id="modal_sc02" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg text-center">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+						<!-- Candidate ID goes below -->
+						<h2 class="modal-title">SC02</h2>
+					</div>
+
+					<!-- Insert Youtube link below -->
+					<iframe
+						src="https://www.youtube.com/embed/F1M6j4kiaNs"
+						allowfullscreen="allowfullscreen"
+						mozallowfullscreen="mozallowfullscreen"
+						msallowfullscreen="msallowfullscreen"
+						oallowfullscreen="oallowfullscreen"
+						webkitallowfullscreen="webkitallowfullscreen"
+					>
+					</iframe>
+
+					<!-- Insert instagram embed link below - can go to instagram post and click "Copy embed link" -->
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
