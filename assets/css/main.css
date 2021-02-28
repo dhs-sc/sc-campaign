@@ -34,7 +34,6 @@
 
 .student-img {
 	width: 100%;
-	height: 100%;
 }
 
 a {
@@ -67,16 +66,12 @@ h3 {
 }
 
 @media screen and (max-width: 800px) {
-	.student-id {
-		font-size: 3vw;
-	}
-
-	.student-name {
-		font-size: 3vw;
-	}
-
 	.campaign-group {
 		font-size: 3vw;
+	}
+
+	.form-inline {
+		flex-flow: initial;
 	}
 
 	#main .btn {
