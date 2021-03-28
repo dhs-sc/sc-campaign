@@ -104,3 +104,9 @@ h3 {
 	background: #0275d8;
 	color: white;
 }
+
+.modal-close-x {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+}
