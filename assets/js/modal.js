@@ -1,6 +1,6 @@
 function generateModal(candidates, type, options) {
 	let html = "";
-	const path = "assets/vid/";
+	const path = "assets/modals/";
 	for (let i = 0; i < candidates.length; i += 3) {
 		for (let j = i; j < i + 3; j++) {
 			if (candidates[j]) {
