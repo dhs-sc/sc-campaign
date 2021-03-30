@@ -54,4 +54,4 @@ For Student-Data CSV:
 
 ### Other resources
 
-- Read this to learn [how to upload files to Github](https://github.com/dhs-sc/sc-campaign/assets/img/student-data).
+- Read this to learn [how to upload files to Github](https://docs.github.com/en/github/managing-files-in-a-repository/adding-a-file-to-a-repository).
