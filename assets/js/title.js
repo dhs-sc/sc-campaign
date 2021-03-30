@@ -30,6 +30,10 @@ var context = {
 			id: "fpp",
 			name: "Final Presentation Project",
 		},
+		{
+			id: "catalog",
+			name: "Candidate Catalog",
+		},
 	],
 };
 
