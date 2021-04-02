@@ -20,4 +20,4 @@ jobs:
         python-version: 3.9
     - name: Update student-data.json
       run: |
-        python data-processing.py ./data-files/ ../assets/json/
+        python data-processing/data-processing.py ./data-files/ ../assets/json/
