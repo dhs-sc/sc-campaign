@@ -24,11 +24,11 @@ var context = {
 		},
 		{
 			id: "dtalk",
-			name: "DTalk",
+			name: "D'TALK",
 		},
 		{
 			id: "fpp",
-			name: "Final Presentation Project",
+			name: "Final Project",
 		},
 		{
 			id: "catalog",
