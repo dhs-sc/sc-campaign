@@ -26,7 +26,7 @@ jobs:
         run: git add .
       - name: add account details
         run: |
-          git config --global user.email "leo.qiyi.joel@dhs.sg"
+          git config --global user.email "elections@dhs.sg"
           git config --global user.name "dhs-sc"
       - name: commit changed files
         run: git commit -m "auto-update student-data.json"
