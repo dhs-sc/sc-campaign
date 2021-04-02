@@ -1,45 +1,57 @@
 import sys, json, csv
 
-def updateJSON(data, record_keys, data_csv, file_name, data_group):
+def updateJSON(data, record_keys, data_csv, file_name, data_path):
+  records = data["data"]
+  for path in data_path:
+    records = records[path]
   for idx, record in enumerate(data_csv):
     if idx != 0:
         try:
-          data["data"][data_group].append(dict(zip(record_keys, [str(r) for r in record])))
+          records.append(dict(zip(record_keys, [str(r) for r in record])))
         except:
           print('something went wrong on line {} of {}'.format(idx+1, file_name))
   return data
 
 
 def generateStudentDataJSON(entry, exit):
-  csv_records = {
+  records_details = {
     "jh-student-data.csv": {
-      "data_group": "jh",
-      "record_keys": ["id", "name", "thumbnail_profile", "profile", "thumbnail_intro", "intro"]
+      "data_path": ["indiv", "jh"], # note: this only works for 
+      "record_keys": ["id", "name", "thumbnail_profile", "profile", "thumbnail_intro", "intro", "thumbnail_dtalk", "dtalk", "thumbnail_catalog"]
     },
     "sh-student-data.csv": {
-      "data_group": "sh",
-      "record_keys": ["id", "name", "thumbnail_profile", "profile", "thumbnail_intro", "intro", "thumbnail_dtalk", "dtalk"]
+      "data_path": ["indiv", "sh"],
+      "record_keys": ["id", "name", "thumbnail_profile", "profile", "thumbnail_intro", "intro", "thumbnail_dtalk", "dtalk", "thumbnail_catalog"]
     },
     "jh-group-data.csv": {
-      "data_group": "group",
+      "data_path": ["group", "jh"],
+      "record_keys": ["id", "name", "description", "thumbnail_fpp", "fpp"]
+    },
+    "sh-group-data.csv": {
+      "data_path": ["group", "sh"],
       "record_keys": ["id", "name", "description", "thumbnail_fpp", "fpp"]
     }
   }
 
   data = {
     "data": {
-      "sh": [],
-      "jh": [],
-      "group": []
+      "indiv": {
+        "jh": [],
+        "sh": []
+      },
+      "group": {
+        "jh": [],
+        "sh": []
+      }
     }
   }
 
-  for file_name in csv_records:
+  for file_name in records_details:
     location = entry + file_name
     data_file = open(location, 'r')
     data_csv = csv.reader(data_file, delimiter=",")
-    csv_record = csv_records[file_name]
-    data = updateJSON(data, csv_record["record_keys"], data_csv, file_name, csv_record['data_group'])
+    records_detail = records_details[file_name]
+    data = updateJSON(data, records_detail["record_keys"], data_csv, file_name, records_detail['data_path'])
     data_file.close()
 
   student_data_location = exit + "student-data.json"
