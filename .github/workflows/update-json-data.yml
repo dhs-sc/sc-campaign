@@ -21,7 +21,7 @@ jobs:
         run: |
           python data-processing/data-processing.py ./data-processing/data-files/ ./assets/json/
       - name: check for changes
-      run: git status
+        run: git status
       - name: stage changed files
         run: git add .
       - name: commit changed files
