@@ -1,13 +1,14 @@
-function generateThumbnail(candidates, type, options) {
+function generateThumbnail(records, page, options) {
 	let html = "";
 	const path = "assets/thumbnails/";
-	for (let i = 0; i < candidates.length; i += 3) {
+	for (let i = 0; i < records.length; i += 3) {
 		html = html + `<div class="row text-center">`;
 		for (let j = i; j < i + 3; j++) {
-			if (candidates[j]) {
+			if (records[j]) {
+				const thumbnail = records[j][`thumbnail_${page}`];
 				const context = {
-					...candidates[j],
-					source: `${path}${candidates[j][`thumbnail_${type}`]}`,
+					...records[j],
+					source: `${path}${thumbnail}`,
 				};
 				html = html + options.fn(context);
 			}
@@ -22,11 +23,11 @@ Handlebars.registerHelper("thumbnail", function (data, options) {
 	const level = url.searchParams.get("l");
 	const page = url.searchParams.get("p");
 	if (page == "fpp") {
-		const groups = data.group;
+		const groups = data.group[level];
 		return generateThumbnail(groups, page, options);
 	} else {
-		const candidates = level == "sh" ? data.sh : data.jh;
-		return generateThumbnail(candidates, page, options);
+		const indiv = data.indiv[level];
+		return generateThumbnail(indiv, page, options);
 	}
 });
 

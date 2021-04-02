@@ -47,12 +47,7 @@
 			const url = new URL(window.location.href);
 			const level = url.searchParams.get("l");
 			const page = url.searchParams.get("p");
-			if (
-				(level == "sh" && page == "fpp") ||
-				(level == "jh" && page == "dtalk") ||
-				!level ||
-				!page
-			) {
+			if (!level || !page) {
 				$("#content").remove();
 				$("#titleHeading").text(
 					"Oh no! Something went wrong! Please check your URL parameters!"

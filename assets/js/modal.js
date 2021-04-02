@@ -1,16 +1,14 @@
-function generateModal(candidates, type, options) {
+function generateModal(records, page, options) {
 	let html = "";
 	const path = "assets/modals/";
-	for (let i = 0; i < candidates.length; i += 3) {
-		for (let j = i; j < i + 3; j++) {
-			if (candidates[j]) {
-				const video = candidates[j][type];
-				const context = {
-					...candidates[j],
-					source: video.search("http") != -1 ? video : `${path}${video}`,
-				};
-				html = html + options.fn(context);
-			}
+	for (let i = 0; i < records.length; i++) {
+		if (records[i]) {
+			const video = records[i][page];
+			const context = {
+				...records[i],
+				source: video.search("http") != -1 ? video : `${path}${video}`,
+			};
+			html = html + options.fn(context);
 		}
 	}
 	return html;
@@ -21,12 +19,15 @@ Handlebars.registerHelper("modal", function (data, options) {
 	const level = url.searchParams.get("l");
 	const page = url.searchParams.get("p");
 	if (page == "fpp") {
-		const groups = data.group;
+		const groups = data.group[level];
 		return generateModal(groups, page, options);
-	} else {
-		const candidates = level == "sh" ? data.sh : data.jh;
-		return generateModal(candidates, page, options);
 	}
+	if (page == "catalog") {
+		// if catalog, no modal is required
+		return "";
+	}
+	const indiv = data.indiv[level];
+	return generateModal(indiv, page, options);
 });
 
 $.getJSON("assets/json/student-data.json", (context) => {

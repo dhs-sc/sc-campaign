@@ -1,65 +1,52 @@
 {
 	"data": {
-		"group": [
-			{
-				"fpp": "dh01.mp4",
-				"description": "Group Members: ....",
-				"thumbnail_fpp": "DH01_profile_cropped.png",
-				"id": "GR01",
-				"name": "Kingold is BAE"
-			}
-		],
-		"sh": [
-			{
-				"profile": "dh01.mp4",
-				"name": "Cheng Yi Sheng",
-				"thumbnail_dtalk": "DH01_profile_cropped.png",
-				"dtalk": "dh01.mp4",
-				"thumbnail_profile": "DH01_profile_cropped.png",
-				"intro": "dh01.mp4",
-				"thumbnail_intro": "DH01_profile_cropped.png",
-				"id": "DH02"
-			},
-			{
-				"profile": "dh01.mp4",
-				"name": "Cheng Yi Sheng",
-				"thumbnail_dtalk": "DH01_profile_cropped.png",
-				"dtalk": "dh01.mp4",
-				"thumbnail_profile": "DH01_profile_cropped.png",
-				"intro": "dh01.mp4",
-				"thumbnail_intro": "DH01_profile_cropped.png",
-				"id": "DH02"
-			},
-			{
-				"profile": "dh01.mp4",
-				"name": "Cheng Yi Sheng",
-				"thumbnail_dtalk": "DH01_profile_cropped.png",
-				"dtalk": "dh01.mp4",
-				"thumbnail_profile": "DH01_profile_cropped.png",
-				"intro": "dh01.mp4",
-				"thumbnail_intro": "DH01_profile_cropped.png",
-				"id": "DH02"
-			},
-			{
-				"profile": "dh01.mp4",
-				"name": "Cheng Yi Sheng",
-				"thumbnail_dtalk": "DH01_profile_cropped.png",
-				"dtalk": "dh01.mp4",
-				"thumbnail_profile": "DH01_profile_cropped.png",
-				"intro": "dh01.mp4",
-				"thumbnail_intro": "DH01_profile_cropped.png",
-				"id": "DH02"
-			}
-		],
-		"jh": [
-			{
-				"profile": "dh01.mp4",
-				"name": "Cheng Yi Sheng",
-				"thumbnail_profile": "DH02_profile_cropped.png",
-				"intro": "dh01.mp4",
-				"thumbnail_intro": "DH01_profile_cropped.png",
-				"id": "DH01"
-			}
-		]
+		"indiv": {
+			"jh": [
+				{
+					"id": "DH01",
+					"name": "Cheng Yi Sheng",
+					"thumbnail_profile": "DH01_profile_cropped.png",
+					"profile": "dh01.mp4",
+					"thumbnail_intro": "DH01_profile_cropped.png",
+					"intro": "dh01.mp4",
+					"thumbnail_dtalk": "DH01_profile_cropped.png",
+					"dtalk": "dh01.mp4",
+					"thumbnail_catalog": "DH01_profile_cropped.png"
+				}
+			],
+			"sh": [
+				{
+					"id": "DH02",
+					"name": "Cheng Yi Shan",
+					"thumbnail_profile": "DH01_profile_cropped.png",
+					"profile": "dh01.mp4",
+					"thumbnail_intro": "DH01_profile_cropped.png",
+					"intro": "dh01.mp4",
+					"thumbnail_dtalk": "DH01_profile_cropped.png",
+					"dtalk": "dh01.mp4",
+					"thumbnail_catalog": "DH01_profile_cropped.png"
+				}
+			]
+		},
+		"group": {
+			"jh": [
+				{
+					"id": "GR01",
+					"name": "Kingold is BAE",
+					"description": "Group Members: ....",
+					"thumbnail_fpp": "DH01_profile_cropped.png",
+					"fpp": "dh01.mp4"
+				}
+			],
+			"sh": [
+				{
+					"id": "GR02",
+					"name": "Kingold is BAE",
+					"description": "Group Members: ....",
+					"thumbnail_fpp": "DH01_profile_cropped.png",
+					"fpp": "dh01.mp4"
+				}
+			]
+		}
 	}
 }
