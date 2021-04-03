@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<title>DHS Elections</title>
+		<link rel="icon" type="image/x-icon" href="assets/img/school-logo.png" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link
@@ -28,31 +29,364 @@
 		<!-- js to write html for navbar -->
 		<script src="./assets/js/navbar.js"></script>
 
-		<div class="jumbotron text-center">
-			<h1>2021 Student Council Elections</h1>
-		</div>
-		<center><h1>Elections intro video / most recent publicity vid</h1></center>
+		<header class="masthead">
+            <div class="container">
+            </div>
+        </header>
+
+		<!--Timeline-->
+        <section class="page-section" id="section1">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Campaign Timeline</h2>
+					<h3 class="section-subheading text-muted"></h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/nomination.png" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text-muted">22 February</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Nominations & Applications</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/tea.png" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text-muted">4 March</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Tea Session</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/closed-sign.png" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-heading">
+									<h4 class="text-muted">14 March</h4>
+								</div>
+								<div class="timeline-body"><p class="text-muted">Applications Closed</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/job-interview.png" alt="" /></div>
+                        <div class="timeline-panel">
+							<div class="timeline-heading">
+                                <h4 class="text-muted">29 - 31 March</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">SH Interviews</p></div>
+                        </div>
+                    </li>
+					<li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/megaphone.png" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-heading">
+									<h4>5 - 15 April</h4>
+								</div>
+								<div class="timeline-body"><p class="text-muted">Campaign Season</p></div>
+                        </div>
+                    </li>
+					<li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/archive.png" alt="" /></div>
+                        <div class="timeline-panel">
+							<div class="timeline-heading">
+                                <h4>16 April</h4>
+                            </div>
+                            <div class="timeline-body"><p>Polling Day</p></div>
+                        </div>
+                    </li>
+					<li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/strong.png" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-heading">
+									<h4>16 - 17 April</h4>
+								</div>
+								<div class="timeline-body"><p>Bootcamp</p></div>
+                        </div>
+                    </li>
+            </div>
+        </section>
+
+		<!-- Intro Video-->
+		<section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Elections 2021 Introduction Video</h2>
+					<h3 class="section-subheading text-muted"></h3>
+                </div>
+                    <div class="row align-items-center">
+                        <div class="youtube-embed embed-responsive-16by9">
+							<iframe
+								class="embed-responsive-item"
+								src="https://www.youtube.com/embed/iP2AlHvnMM8"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<!-- Publicity Video-->
+		<section class="page-section " id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">SC Structure</h2>
+					<h3 class="section-subheading text-muted"></h3>
+                </div>
+                    <div class="row align-items-center">
+                        <img src="assets/img/SC STRUCTURE.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<!-- Vlog Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">SC Vlogs</h2>
+					<h3 class="section-subheading text-muted">Click to find out more about what life is like in SC! </h3>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/thumbnails/DH01_feature wall.png"  alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Ms Aow</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/thumbnails/DH01_feature wall.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Victoria</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-6 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/thumbnails/DH01_feature wall.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Nyx</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/thumbnails/DH01_feature wall.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Natalie</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		 <!-- Portfolio Modals-->
+        <!-- Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title col-12 text-center">
+							Elections 2021 Ms Aow SC Vlog
+						</h2>
+						<button
+							type="button"
+							class="close modal-close-x"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<iframe
+							src="https://www.youtube.com/embed/L77I9KEIXvA"
+							allowfullscreen="allowfullscreen"
+							mozallowfullscreen="mozallowfullscreen"
+							msallowfullscreen="msallowfullscreen"
+							oallowfullscreen="oallowfullscreen"
+							webkitallowfullscreen="webkitallowfullscreen"
+							onerror="alert('tf')"
+						>
+						</iframe>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+            </div>
+        </div>
+        <!-- Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title col-12 text-center">
+							Elections 2021 Vic SC Vlog
+						</h2>
+						<button
+							type="button"
+							class="close modal-close-x"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<iframe
+							src="https://www.youtube.com/embed/Y9BE_LREL_8"
+							allowfullscreen="allowfullscreen"
+							mozallowfullscreen="mozallowfullscreen"
+							msallowfullscreen="msallowfullscreen"
+							oallowfullscreen="oallowfullscreen"
+							webkitallowfullscreen="webkitallowfullscreen"
+							onerror="alert('tf')"
+						>
+						</iframe>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+            </div>
+        </div>
+        <!-- Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title col-12 text-center">
+							Elections 2021 Nyx SC Vlog
+						</h2>
+						<button
+							type="button"
+							class="close modal-close-x"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<iframe
+							src="https://www.youtube.com/embed/0K3-Fcq4rAw"
+							allowfullscreen="allowfullscreen"
+							mozallowfullscreen="mozallowfullscreen"
+							msallowfullscreen="msallowfullscreen"
+							oallowfullscreen="oallowfullscreen"
+							webkitallowfullscreen="webkitallowfullscreen"
+							onerror="alert('tf')"
+						>
+						</iframe>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title col-12 text-center">
+							Elections 2021 Natalie SC Vlog
+						</h2>
+						<button
+							type="button"
+							class="close modal-close-x"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<iframe
+							src="https://www.youtube.com/embed/hFxR7oFAMmM"
+							allowfullscreen="allowfullscreen"
+							mozallowfullscreen="mozallowfullscreen"
+							msallowfullscreen="msallowfullscreen"
+							oallowfullscreen="oallowfullscreen"
+							webkitallowfullscreen="webkitallowfullscreen"
+							onerror="alert('tf')"
+						>
+						</iframe>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+            </div>
+        </div>
+	
+		<!-- <h2 class="text-center">Elections 2021 Introduction Video</h2>
+
 		<div class="youtube-embed embed-responsive-16by9">
 			<iframe
 				class="embed-responsive-item"
-				src="https://www.youtube.com/embed/F1M6j4kiaNs"
+				src="https://www.youtube.com/embed/iP2AlHvnMM8"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen
 			></iframe>
 		</div>
+		
+		<h2 class="text-center">Campaign Publicity</h2>
 
-		<div class="main-container">
-			<center><h1>Intro text or smth</h1></center>
-			<p>
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-				mollit anim id est laborum."
-			</p>
+		<div class="youtube-embed embed-responsive-16by9">
+			<iframe
+				class="embed-responsive-item"
+				src="https://www.youtube.com/embed/vJ4_t9tf_7s"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
 		</div>
+		<h2 class="text-center">SC Vlogs</h2>
+		<svg class="nectar-shape-divider" fill="#d9e7f0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"> 
+			<polygon points="104 10, 104 0, 0 0, 0 10"> </polygon>
+		</svg> -->
 	</body>
 </html>
