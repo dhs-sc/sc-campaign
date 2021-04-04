@@ -1244,11 +1244,11 @@ header.masthead {
 }
 
 #section1{
-	margin: 130px;
+	margin-top: 10px;
 }
 
 #section2{
-	margin: 130px;
+	margin-top: 10px;
 }
 
 .timeline {
@@ -1299,7 +1299,7 @@ header.masthead {
 	border-left-width: 0;
   }
   .timeline > li .timeline-image {
-	position: absolute;
+	position: relative;
 	z-index: 100;
 	left: 0;
 	width: 80px;
