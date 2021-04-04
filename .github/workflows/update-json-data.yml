@@ -20,8 +20,10 @@ jobs:
       - name: Update student-data.json
         run: |
           python data-processing/data-processing.py ./data-processing/data-files/ ./assets/json/
+      - name: check status
+        run: git status
       - name: push changes only if changes exist
-        run: if git diff-index --quiet HEAD --;
+        run: if ! [[ -z $(git status -s) ]];
           then git config --global user.email "elections@dhs.sg" &&
           git config --global user.name "dhs-sc" &&
           git pull origin master &&
