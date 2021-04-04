@@ -20,25 +20,12 @@ jobs:
       - name: Update student-data.json
         run: |
           python data-processing/data-processing.py ./data-processing/data-files/ ./assets/json/
-      - name: check for changes
-        run: if ! git diff-index --quiet HEAD --;
+      - name: push changes only if changes exist
+        run: if git diff-index --quiet HEAD --;
           then git config --global user.email "elections@dhs.sg" &&
           git config --global user.name "dhs-sc" &&
+          git pull origin master &&
           git add . &&
           git commit -m "auto-update student-data.json" &&
           git push origin master;
           fi
-      # - name: pull from master branch
-      #   run: git pull origin master
-      # - name: check for changes
-      #   run: git add .
-      # - name: add account details
-      #   run: |
-      #     git config --global user.email "elections@dhs.sg"
-      #     git config --global user.name "dhs-sc"
-      # - name: commit changed files
-      #   run: git commit -m "auto-update student-data.json"
-      # - name: fetch from master
-      #   run: git fetch origin master
-      # - name: push code to master
-      #   run: git push origin HEAD:master
