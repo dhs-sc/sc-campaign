@@ -1711,3 +1711,8 @@ button.bg-light:hover,
 button.bg-light:focus {
   background-color: #dae0e5 !important;
 }
+
+.row-fluid {
+    display: flex;
+    align-items: center;
+}
