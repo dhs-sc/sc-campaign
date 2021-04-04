@@ -1084,8 +1084,8 @@
 .container-md,
 .container-sm {
   width: 100%;
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
+  padding-right: 5 rem;
+  padding-left:  5 rem;
   margin-right: auto;
   margin-left: auto;
 }
