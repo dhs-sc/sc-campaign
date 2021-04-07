@@ -13,7 +13,7 @@ function getSourceType(source) {
 }
 
 function generateViewer(records, page, cid, options) {
-	const path = "assets/modals/";
+	const path = "assets/views/";
 	const record = records.find((r) => r.id === cid.toUpperCase());
 	const source = record[page];
 	const source_type = getSourceType(source);
