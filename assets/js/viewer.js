@@ -37,10 +37,6 @@ Handlebars.registerHelper("viewer", function (data, options) {
 		const groups = data.group[level];
 		return generateViewer(groups, page, cid, options);
 	}
-	if (page == "catalog") {
-		// if catalog, no modal is required
-		return "";
-	}
 	const indiv = data.indiv[level];
 	return generateViewer(indiv, page, cid, options);
 });
