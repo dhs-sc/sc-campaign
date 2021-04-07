@@ -68,7 +68,6 @@ $.getJSON("assets/json/student-data.json", (context) => {
 		$("#viewer").after(html);
 
 		const source = $(".embedded-content").attr("src");
-		console.log(source);
 		$.get(source).fail(() => {
 			$(".embedded-container").after(
 				`<h6 class="mt-3 text-center pl-3 pr-3">Note: The content has yet to be released!</h6>`
