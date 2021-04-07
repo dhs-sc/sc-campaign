@@ -1,11 +1,13 @@
 {{#thumbnail data}}
-<div class="col-4 mb-5" data-toggle="modal" data-target="#modal_{{id}}">
-	<h4 class="student-id">{{id}}</h4>
-	<img
-		src="assets/img/student-data/{{pic_source}}"
-		class="student-img"
-		alt="Error loading {{id}}'s photo here"
-	/>
-	<h4 class="student-name">{{name}}</h4>
+<div class="col-4 mb-5">
+	<a href="{{href}}" class="thumbnail_link">
+		<h4 class="student-id">{{id}}</h4>
+		<img
+			src="{{source}}"
+			class="student-img"
+			alt="Error loading {{id}}'s photo here"
+		/>
+		<h4 class="student-name">{{name}}</h4>
+	</a>
 </div>
 {{/thumbnail}}

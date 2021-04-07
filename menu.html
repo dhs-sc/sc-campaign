@@ -31,7 +31,30 @@
 		<!-- js to write html for navbar -->
 		<script src="assets/js/navbar.js"></script>
 
-		<!-- injects viewer -->
-		<script src="assets/js/viewer.js" id="viewer"></script>
+		<!-- injects title -->
+		<script src="assets/js/title.js" id="title"></script>
+
+		<div id="content">
+			<div class="container">
+				<!-- injects thumbnails -->
+				<script src="assets/js/thumbnail.js" id="thumbnail"></script>
+			</div>
+		</div>
+		<script>
+			const url = new URL(window.location.href);
+			const level = url.searchParams.get("l");
+			const page = url.searchParams.get("p");
+			if (!level || !page) {
+				$("#content").remove();
+				$("#titleHeading").text(
+					"Oh no! Something went wrong! Please check your URL parameters!"
+				);
+			}
+			if (level == "sh") {
+				$(".jumbotron").addClass("SH");
+			} else {
+				$(".jumbotron").addClass("JH");
+			}
+		</script>
 	</body>
 </html>
