@@ -1806,10 +1806,29 @@ button.bg-light:focus {
 }
 
 /* for viewer.html */
-.embedded-content {
-	max-width: 80%;
-	max-height: 80%;
-	position: relative !important;
+
+@media screen and (max-width: 2000px) {
+	.embedded-content {
+		max-width: 20%;
+		max-height: 20%;
+		position: relative !important;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.embedded-content {
+		max-width: 45%;
+		max-height: 45%;
+		position: relative !important;
+	}
+}
+
+@media screen and (max-width: 399px) {
+	.embedded-content {
+		max-width: 80%;
+		max-height: 80%;
+		position: relative !important;
+	}
 }
 
 .embedded-container {
