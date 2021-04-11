@@ -1,14 +1,16 @@
 function getSourceType(source) {
 	let source_type = "";
-	const imageFileTypes = [".png", ".jpg"];
-	const videoFileTypes = [".mp4"];
-	imageFileTypes.forEach((type) => {
-		if (source.search(type) != -1) source_type = "image";
-	});
-	videoFileTypes.forEach((type) => {
-		if (source.search(type) != -1) source_type = "video";
-	});
-	if (source.search("http") != -1) return "external";
+	const keywords = {
+		// order of keywords key-value pairs determines priority.
+		image: [".png", ".jpg"],
+		video: [".mp4"],
+		external: ["www.youtube.com/embed/"],
+	};
+	for (const keyword in keywords) {
+		keywords[keyword].forEach((type) => {
+			if (source.includes(type)) source_type = keyword;
+		});
+	}
 	return source_type;
 }
 
@@ -55,7 +57,7 @@ Handlebars.registerHelper("ifExternal", function (value) {
 
 $.getJSON("assets/json/student-data.json", (context) => {
 	var templateScript = Handlebars.compile(
-		`{{#viewer data}} <div class="jumbotron text-center"> <h1 id="titleHeading">{{id}} - {{name}}</h1> </div> <div class="embedded-container"> {{#if (isVideo source_type)}} <video class="embedded-content" controls src="{{source}}"></video> {{/if}} {{#if (ifExternal source_type)}} <iframe class="embedded-content" src="{{source}}"> </iframe> {{/if}} {{#if (isImage source_type)}} <img src="{{source}}" class="embedded-content" alt="Error loading {{id}}'s photo here" /> {{/if}} </div> {{#if description}} <h6 class="mt-3 text-center pl-3 pr-3">{{description}}</h6> {{/if}} {{/viewer}}`
+		`{{#viewer data}} <div class="jumbotron text-center"> <h1 id="titleHeading">{{id}} - {{name}}</h1> </div> <div class="embedded-container"> {{#if (isVideo source_type)}} <video class="embedded-content" controls src="{{source}}"></video> {{/if}} {{#if (ifExternal source_type)}} <iframe class="embedded-content" src="{{source}}" title="Iframe Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen > </iframe> {{/if}} {{#if (isImage source_type)}} <img src="{{source}}" class="embedded-content" alt="Error loading {{id}}'s photo here" /> {{/if}} </div> {{#if description}} <h6 class="mt-3 text-center pl-3 pr-3">{{description}}</h6> {{/if}} {{/viewer}}`
 	);
 
 	try {
@@ -63,7 +65,15 @@ $.getJSON("assets/json/student-data.json", (context) => {
 
 		$("#viewer").after(html);
 
-		const source = $(".embedded-content").attr("src");
+		let source = $(".embedded-content").attr("src");
+
+		// include logic to change url to test for existence of asset here.
+		if (source.includes("www.youtube.com/embed/")) {
+			const url = new URL(source);
+			const vid = url.pathname.replace("/embed/", "");
+			source = `https://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=${vid}`;
+		}
+
 		$.get(source).fail(() => {
 			$(".embedded-container").after(
 				`<h6 class="mt-3 text-center pl-3 pr-3">Note: The content has yet to be released!</h6>`

@@ -6,7 +6,15 @@
 	{{#if (isVideo source_type)}}
 	<video class="embedded-content" controls src="{{source}}"></video>
 	{{/if}} {{#if (ifExternal source_type)}}
-	<iframe class="embedded-content" src="{{source}}"> </iframe>
+	<iframe
+		class="embedded-content"
+		src="{{source}}"
+		title="Iframe Video Player"
+		frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen
+	>
+	</iframe>
 	{{/if}} {{#if (isImage source_type)}}
 	<img
 		src="{{source}}"

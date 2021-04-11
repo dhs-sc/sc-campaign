@@ -1,5 +1,8 @@
 import sys, json, csv
 
+# whitelisted urls which have no X-Frame-Options and allows for ajax calls. 
+whitelist = ["www.youtube.com/embed/"]
+
 def updateJSON(data, record_keys, data_csv, file_name, data_path):
   records = data["data"]
   for path in data_path:
@@ -7,6 +10,9 @@ def updateJSON(data, record_keys, data_csv, file_name, data_path):
   for idx, record in enumerate(data_csv):
     if idx != 0:
         try:
+          for value in record:
+            if "http" in value and (not any([url in value for url in whitelist])):
+                raise TypeError("Only Whitelisted URLs are allowed")
           records.append(dict(zip(record_keys, [str(r) for r in record])))
         except:
           print('something went wrong on line {} of {}'.format(idx+1, file_name))
@@ -16,7 +22,7 @@ def updateJSON(data, record_keys, data_csv, file_name, data_path):
 def generateStudentDataJSON(entry, exit):
   records_details = {
     "jh-student-data.csv": {
-      "data_path": ["indiv", "jh"], # note: this only works for 
+      "data_path": ["indiv", "jh"], 
       "record_keys": ["id", "name", "thumbnail_profile", "profile", "thumbnail_intro", "intro", "thumbnail_dtalk", "dtalk", "thumbnail_catalog"]
     },
     "sh-student-data.csv": {
