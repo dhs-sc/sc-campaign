@@ -6,10 +6,9 @@ View the website at [https://dhs-sc.github.io/sc-campaign/](https://dhs-sc.githu
 
 ### How to add new entry
 
-- Update [Student-Data CSV files](https://github.com/dhs-sc/sc-campaign/data-processing/data-files) with a new entry
+- Update [Student-Data CSV files](https://github.com/dhs-sc/sc-campaign/tree/master/data-processing/data-files) with a new entry
 - Add in the corresponding image/video files in the [/thumbnails](https://github.com/dhs-sc/sc-campaign/assets/thumbnails) and [/modals](https://github.com/dhs-sc/sc-campaign/assets/modals) folders.
-- Run the following command in your terminal `python3 data-processing/data-processing.py ./data-files/ ../assets/json/` on the same folder level as this README.md file.
-  - Note:exclamation:: you need to have [python 3](https://www.python.org/downloads/) installed before running the above command.
+
 
 ---
 
@@ -40,8 +39,9 @@ For [/modals](https://github.com/dhs-sc/sc-campaign/assets/modals) folder:
 
 For Student-Data CSV:
 
-- Upload the csv files at [https://github.com/dhs-sc/sc-campaign/data-processing/data-files](https://github.com/dhs-sc/sc-campaign/data-processing/data-files)
+- Upload the csv files at [https://github.com/dhs-sc/sc-campaign/data-processing/data-files](https://github.com/dhs-sc/sc-campaign/tree/master/data-processing/data-files)
   - Please keep the file names the same as the ones currently in the folder, ie **replace the current files**.
+  - Please ensure that the encoding of the file is in **utf-8** format.
   - There are currently 3 csv files that needs to be filled:
     - `jh-group-data.csv` which is for JH groups for the Final Presentation Project. Click [here](https://dhs-sc.github.io/sc-campaign/candidates.html?p=fpp&l=jh) to go to webpage.
     - `jh-student-data.csv` which is for JH individual candidates. Click [here](https://dhs-sc.github.io/sc-campaign/candidates.html?p=profile&l=jh) to go to one of the webpages.
