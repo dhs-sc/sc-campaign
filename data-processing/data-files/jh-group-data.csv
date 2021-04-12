@@ -1,9 +1,9 @@
-Group's ID,Group's Name,Description,Final Project (Thumbnail),Final Project (Views)
-GR01,Group 1,"Group Members: DH01 Jaimie Ong, DH02 Liu Xingyu, DH03 Marissa Tan, DH04 Tok Lee Joon, DH05 Shernace Seet",GR01_fpp_thumbnail.png,GR01_fpp_video.mp4
-GR02,Group 2,"Group Members: DH06 Tan Jing Xi, DH07 Shawn Loh, DH08 Low An Qi, DH09 Meryl Nga, DH10 Charlotte Yap",GR01_fpp_thumbnail.png,GR02_fpp_video.mp4
-GR03,Group 3,"Group Members: DH11 Shannon Kee, DH12 Han YiHeng, DH13 Yap Hui Xuan, DH14 Lock Yi Yin",GR01_fpp_thumbnail.png,GR03_fpp_video.mp4
-GR04,Group 4,"Group Members: DH15 Eunice Hoo, DH16 Nicholas Loh, DH17 Putri Lie, DH18 Samantha Chan, DH19 Qi Xueyan",GR01_fpp_thumbnail.png,GR04_fpp_video.mp4
-GR05,Group 5,"Group Members: DH20 Jeremy Tan, DH21 Tan Ern Min, DH22 Lin Xin Yi, DH23 Cindy Huang, DH24 Amanda Toh",GR01_fpp_thumbnail.png,GR05_fpp_video.mp4
-GR06,Group 6,"Group Members: DH25 Liaw Yu Jun, DH26 Fu Zhao Yi, DH27 Valerie Chan, DH28 Renee Lau, DH29 Chim Dong Han",GR01_fpp_thumbnail.png,GR06_fpp_video.mp4
-GR07,Group 7,"Group Members: DH30 Hong Hung Leung, DH31 Stella Tan, DH32 Chow Zhi Yu, DH33 Meera Mardolker, DH34 Wong Zi Yan",GR01_fpp_thumbnail.png,GR07_fpp_video.mp4
-GR08,Group 8,"Group Members: DH35 Xavier Lee, DH36 Sim Xin Yi, DH37 Sarah Mae Loke, DH38 Lee Wai Yen, ",GR01_fpp_thumbnail.png,GR08_fpp_video.mp4
+Group's ID,Group's Name,Description,Final Project (Thumbnail),Final Project (Modal)
+GR01,Group 1,"Group Members: DH01 Jaimie Ong, DH02 Liu Xingyu, DH03 Marissa Tan, DH04 Tok Lee Joon, DH05 Shernace Seet",grp1_fpp_thumbnail.png,https://www.youtube.com/embed/v7jMm-g-BoI 
+GR02,Group 2,"Group Members: DH06 Tan Jing Xi, DH07 Shawn Loh, DH08 Low An Qi, DH09 Meryl Nga, DH10 Charlotte Yap",grp2_fpp_thumbnail.png,https://www.youtube.com/embed/ifzaXU2WIcs 
+GR03,Group 3,"Group Members: DH11 Shannon Kee, DH12 Han YiHeng, DH13 Yap Hui Xuan, DH14 Lock Yi Yin",grp3_fpp_thumbnail.png,https://www.youtube.com/embed/yHH97K00_Uw 
+GR04,Group 4,"Group Members: DH15 Eunice Hoo, DH16 Nicholas Loh, DH17 Putri Lie, DH18 Samantha Chan, DH19 Qi Xueyan",grp4_fpp_thumbnail.png,https://www.youtube.com/embed/FvZQKq9Bi3w 
+GR05,Group 5,"Group Members: DH20 Jeremy Tan, DH21 Tan Ern Min, DH22 Lin Xin Yi, DH23 Cindy Huang, DH24 Amanda Toh",grp5_fpp_thumbnail.png,https://www.youtube.com/embed/-mbBd8_8n3s 
+GR06,Group 6,"Group Members: DH25 Liaw Yu Jun, DH26 Fu Zhao Yi, DH27 Valerie Chan, DH28 Renee Lau, DH29 Chim Dong Han",grp6_fpp_thumbnail.png,https://www.youtube.com/embed/isOs7IlZLfs 
+GR07,Group 7,"Group Members: DH30 Hong Hung Leung, DH31 Stella Tan, DH32 Chow Zhi Yu, DH33 Meera Mardolker, DH34 Wong Zi Yan",grp7_fpp_thumbnail.png,https://www.youtube.com/embed/Yy6vt4N_2Gk 
+GR08,Group 8,"Group Members: DH35 Xavier Lee, DH36 Sim Xin Yi, DH37 Sarah Mae Loke, DH38 Lee Wai Yen, ",grp8_fpp_thumbnail.png,https://www.youtube.com/embed/Im4JOnsnEnc 
