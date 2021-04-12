@@ -45,6 +45,7 @@ For Student-Data CSV:
   - There are currently 3 csv files that needs to be filled:
     - `jh-group-data.csv` which is for JH groups for the Final Presentation Project. Click [here](https://dhs-sc.github.io/sc-campaign/candidates.html?p=fpp&l=jh) to go to webpage.
     - `jh-student-data.csv` which is for JH individual candidates. Click [here](https://dhs-sc.github.io/sc-campaign/candidates.html?p=profile&l=jh) to go to one of the webpages.
+    - `sh-group-data.csv` which is for SH groups for the Final Presentation Project.. Click [here](https://dhs-sc.github.io/sc-campaign/candidates.html?p=fpp&l=sh) to go to one of the webpage.
     - `sh-student-data.csv` which is for SH individual candidates. Click [here](https://dhs-sc.github.io/sc-campaign/candidates.html?p=profile&l=sh) to go to one of the webpage.
   - The **groups'/individual candidates' IDs** of the _can be anything, as long as there are no repeats_
   - The **groups'/individual candidates' names** _can be anything or even left blank, as long as there are no repeats_
