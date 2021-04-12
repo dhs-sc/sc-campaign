@@ -7,7 +7,7 @@ View the website at [https://dhs-sc.github.io/sc-campaign/](https://dhs-sc.githu
 ### How to add new entry
 
 - Update [Student-Data CSV files](https://github.com/dhs-sc/sc-campaign/tree/master/data-processing/data-files) with a new entry
-- Add in the corresponding image/video files in the [/thumbnails](https://github.com/dhs-sc/sc-campaign/assets/thumbnails) and [/modals](https://github.com/dhs-sc/sc-campaign/assets/modals) folders.
+- Add in the corresponding image/video files in the [/thumbnails](https://github.com/dhs-sc/sc-campaign/tree/master/assets/thumbnails) and [/views](https://github.com/dhs-sc/sc-campaign/tree/master/assets/views) folders.
 
 
 ---
@@ -20,7 +20,7 @@ Note:exclamation:: All uploaded file sizes have to be **smaller than 25mb**. If 
 
 ### Upload guidelines
 
-For [/thumbnail](https://github.com/dhs-sc/sc-campaign/assets/thumbnails) folder:
+For [/thumbnail]((https://github.com/dhs-sc/sc-campaign/tree/master/assets/thumbnails) folder:
 
 - ![this is a thumbnail](assets/img/tutorial/thumbnail-img.png) The square-ish pictures in the above picture are thumbnails. These pictures are in the [/thumbnail](https://github.com/dhs-sc/sc-campaign/assets/thumbnails) folder.
 - Accepted File types: **PNG / JPG**
@@ -28,9 +28,9 @@ For [/thumbnail](https://github.com/dhs-sc/sc-campaign/assets/thumbnails) folder
 - What to update for Student-Data CSV?
   - You need to add in the **file name** _(with file type extension, ie with `.png` or `.jpg`)_ in the respective row and column
 
-For [/modals](https://github.com/dhs-sc/sc-campaign/assets/modals) folder:
+For [/views](https://github.com/dhs-sc/sc-campaign/tree/master/assets/views) folder:
 
-- ![this is a modal](assets/img/tutorial/modal-img.png)The video/image under the Candidate ID and Candidate Name is a modal. These videos/pictures are in the [/modals](https://github.com/dhs-sc/sc-campaign/assets/modals) folder.
+- ![this is a modal](assets/img/tutorial/modal-img.png)The video/image under the Candidate ID and Candidate Name is a modal. These videos/pictures are in the [/views](https://github.com/dhs-sc/sc-campaign/tree/master/assets/views) folder.
 - File types: **PNG / JPG / MP4**
 - File names: _can be anything, as long as there are **no repeated file names**_
 - What to update for Student-Data CSV?
@@ -43,10 +43,10 @@ For Student-Data CSV:
   - Please keep the file names the same as the ones currently in the folder, ie **replace the current files**.
   - Please ensure that the encoding of the file is in **utf-8** format.
   - There are currently 3 csv files that needs to be filled:
-    - `jh-group-data.csv` which is for JH groups for the Final Presentation Project. Click [here](https://dhs-sc.github.io/sc-campaign/candidates.html?p=fpp&l=jh) to go to webpage.
-    - `jh-student-data.csv` which is for JH individual candidates. Click [here](https://dhs-sc.github.io/sc-campaign/candidates.html?p=profile&l=jh) to go to one of the webpages.
-    - `sh-group-data.csv` which is for SH groups for the Final Presentation Project.. Click [here](https://dhs-sc.github.io/sc-campaign/candidates.html?p=fpp&l=sh) to go to one of the webpage.
-    - `sh-student-data.csv` which is for SH individual candidates. Click [here](https://dhs-sc.github.io/sc-campaign/candidates.html?p=profile&l=sh) to go to one of the webpage.
+    - `jh-group-data.csv` which is for JH groups for the Final Presentation Project. Click [here](https://dhs-sc.github.io/sc-campaign/menu.html?p=fpp&l=jh) to go to webpage.
+    - `jh-student-data.csv` which is for JH individual candidates. Click [here](https://dhs-sc.github.io/sc-campaign/menu.html?p=profile&l=jh) to go to one of the webpages.
+    - `sh-group-data.csv` which is for SH groups for the Final Presentation Project. Click [here](https://dhs-sc.github.io/sc-campaign/menu.html?p=fpp&l=sh) to go to one of the webpage.
+    - `sh-student-data.csv` which is for SH individual candidates. Click [here](https://dhs-sc.github.io/sc-campaign/menu.html?p=profile&l=sh) to go to one of the webpage.
   - The **groups'/individual candidates' IDs** of the _can be anything, as long as there are no repeats_
   - The **groups'/individual candidates' names** _can be anything or even left blank, as long as there are no repeats_
   - The **groups' description** _can be anything or even left blank, as long as there are no repeats_
