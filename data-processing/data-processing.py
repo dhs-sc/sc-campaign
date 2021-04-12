@@ -54,7 +54,7 @@ def generateStudentDataJSON(entry, exit):
 
   for file_name in records_details:
     location = entry + file_name
-    data_file = open(location, 'r')
+    data_file = open(location, 'r', encoding="utf8")
     data_csv = csv.reader(data_file, delimiter=",")
     records_detail = records_details[file_name]
     data = updateJSON(data, records_detail["record_keys"], data_csv, file_name, records_detail['data_path'])
