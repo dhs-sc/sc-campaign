@@ -1276,6 +1276,31 @@ h3 {
 	color: white;
 }
 
+.BG1 {
+	background: #d3d3d3;
+	color: black;
+}
+
+.drakon {
+	background: #000080;
+	color: white;
+}
+
+.kirin {
+	background: #006400;
+	color: white;
+}
+
+.bennu {
+	background: #FF0000;
+	color: white;
+}
+
+.homa{
+	background: #FF6600;
+	color: white;
+}
+
 .modal-close-x {
 	position: absolute;
 	top: 5%;
